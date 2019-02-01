@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FBC73A5B-3798-41EC-9EC2-8710C1BFB550}</ProjectGuid>
+    <ProjectGuid>{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SolidWorkshop</RootNamespace>
-    <AssemblyName>SolidWorkshop</AssemblyName>
+    <RootNamespace>SolidWorkshop.Models</RootNamespace>
+    <AssemblyName>SolidWorkshop.Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,15 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteService.cs" />
-    <Compile Include="Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SolidWorkshop.Models\SolidWorkshop.Models.csproj">
-      <Project>{2ffef03e-ea0c-4ed4-9a7c-5ac065ea6661}</Project>
-      <Name>SolidWorkshop.Models</Name>
-    </ProjectReference>
+    <Compile Include="Service.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,23 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data;
+using SolidWorkshop.Models;
 
 namespace SolidWorkshop
 {
-    public class Service
+    public class ConcreteService : Service<Entity>
     {
-        private const string _connectionString = "[connectionString]";
-        protected readonly SqlConnection _sqlConnection;
-
-        public Service()
+        public ConcreteService(IDbConnection connection) : base(connection)
         {
-            //_sqlConnection = new SqlConnection(_connectionString);
         }
 
-        public Entity Save(Entity entity)
+        public override Entity Save(Entity entity)
         {
             try
             {
@@ -25,9 +19,9 @@ namespace SolidWorkshop
                 {
                     try
                     {
-                        _sqlConnection.Open();
+                        _connection.Open();
                         //perform Save
-                        _sqlConnection.Close();
+                        _connection.Close();
                         return entity;
                     }
                     catch
@@ -44,13 +38,12 @@ namespace SolidWorkshop
             }
         }
 
-        public List<Entity> ReadAll()
+        public override List<Entity> ReadAll()
         {
-            _sqlConnection.Open();
-            //perform Save
-            _sqlConnection.Close();
+            _connection.Open();
+            //perform Read
+            _connection.Close();
             return new List<Entity>();
         }
-
     }
 }

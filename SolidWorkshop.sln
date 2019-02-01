@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidWorkshop", "SolidWorkshop\SolidWorkshop.csproj", "{FBC73A5B-3798-41EC-9EC2-8710C1BFB550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidWorkshop.Models", "SolidWorkshop.Models\SolidWorkshop.Models.csproj", "{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FBC73A5B-3798-41EC-9EC2-8710C1BFB550}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC73A5B-3798-41EC-9EC2-8710C1BFB550}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC73A5B-3798-41EC-9EC2-8710C1BFB550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFEF03E-EA0C-4ED4-9A7C-5AC065EA6661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
